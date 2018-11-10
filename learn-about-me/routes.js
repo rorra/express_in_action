@@ -17,7 +17,7 @@ ensureAuthenticate = (req, res, next) => {
     req.flash("info", "You must be logged in to see this page.");
     res.redirect("/login");
   }
-}
+};
 
 router.get("/", (req, res, next) => {
   User.find()
@@ -37,7 +37,7 @@ router.post("/signup", (req, res, next) => {
   const password = req.body.password;
 
   User.findOne({username: username}, (err, user) => {
-    if (err) { return next(err) };
+    if (err) { return next(err); }
     if (user) {
       req.flash("error", "User already exists");
       return res.redirect("/signup");

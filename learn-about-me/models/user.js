@@ -32,11 +32,11 @@ userSchema.methods.checkPassword = function (guess, done) {
   bcrypt.compare(guess, this.password, (err, isMatch) => {
     done(err, isMatch);
   });
-}
+};
 
 userSchema.methods.name = function() {
   return this.displayName || this.username;
-}
+};
 
 const User = mongoose.model("User", userSchema);
 module.exports = User;
