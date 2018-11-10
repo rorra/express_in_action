@@ -1,0 +1,15 @@
+{
+  "name": "ch_03",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodrigo Dominguez <rorra@rorra.com.ar>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}
